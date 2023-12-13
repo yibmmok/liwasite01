@@ -1,0 +1,32 @@
+
+// pagination code starts
+	const pageData = ref({})
+	const pageFetch = (page:number, pageSize:number) => {
+		return new Promise<User[]>((resolve, reject) => {
+			let start = (page - 1) * pageSize
+			let end = start + pageSize
+			setTimeout(() => {
+				resolve(liwaData.value.slice(start, end))
+			}, 100)
+		})
+	}
+
+	const fetchPageData = ({ currentPage, currentPageSize }: { currentPage: number; currentPageSize: number}) {
+	const fetchPageData = ({currentPage, currentPageSize}) => {
+		pageFetch(currentPage, currentPageSize).then((responseData) => {
+			pageData.value = responseData
+			console.log('pageData =', pageData.value)
+		})
+	}	
+
+	const { currentPage, currentPageSize, pageCount, isFirstPage, isLastPage, prev, next, } = useOffsetPagination({
+		total: liwaData.value.length,
+		page: 1,
+		pageSize,
+		onPageChange: fetchPageData,
+		onPageSizeChange: fetchPageData
+	})	
+// pagination code ends
+
+// 去除引號
+let liwaJWT = liwaJWT1.replace(/^["'](.+(?=["']$))["']$/, '$1')	

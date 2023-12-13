@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+}
+
+@layer components {
+  #app {
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: calc(100vh - 55px);
+    @apply w-full mt-10 text-center text-gray-500;
+  }
+
+  .barPanel {
+    @apply min-h-fit relative bg-white text-black py-3 text-lg rounded-none flex flex-row;
+  }
+
+  /********** liwaGrid 的css starts **********/
+  .thPanel, .tdPanel, .tfPanel {
+    @apply px-6 py-3 border-r border-gray-300 text-left text-sm font-medium text-gray-500 uppercase tracking-wider;
+  }
+  /********** liwaGrid 的css ends   **********/
+
+  .top-icon {
+    @apply w-8 h-8 bg-orange-500 rounded mr-2 cursor-pointer;
+  }
+
+  .tab-active {
+    @apply -mb-px border-b-4 border-blue-600;
+  }
+}
+
+@layer utilities {
+  .underline-double {
+    text-decoration: underline double;
+  }
+}

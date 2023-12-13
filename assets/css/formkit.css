@@ -1,0 +1,322 @@
+  .formkit-outer {
+    margin-bottom: 0.25rem;
+  }
+
+  label.formkit-label {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  span.formkit-label {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #374151;
+    margin-top:.25rem;
+  }
+
+  .formkit-inner {
+/*    max-width: 28rem;*/
+    border: 1px solid #9ca3af;
+    border-radius: .5rem;
+    margin-bottom: 0.25rem;
+    overflow:hidden;
+  }
+
+  .formkit-inner:focus {
+    border: 1px solid #3b82f6;
+  }
+
+  .formkit-outer[data-type="color"] .formkit-inner, .formkit-outer[data-type="range"] .formkit-inner {
+    border: none;
+  }
+
+  .formkit-option {
+    line-height: 2.3rem;
+  }
+
+  .formkit-option:hover {
+    background-color:#BDBDBD;
+  }
+
+  .formkit-option .formkit-inner {
+    margin-bottom: 0rem;
+    margin-right: .5rem;
+    border: none;
+    overflow: hidden;
+    float:left;
+
+  }
+
+  .formkit-invalid {
+    color: #ef4444;
+  }
+
+  .formkit-disabled {
+    opacity: 0.4;
+  }
+
+  .formkit-input[type="text"] {
+    width: 100%;
+    height: 2.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    border:1px solid #333;
+    border-radius:10px;
+    font-size:1rem;
+    line-height: 1.5rem;
+    color: #374151;
+  }
+
+  .formkit-input[type="text"]::placeholder {
+    color: #9ca3af;
+  }
+
+  .formkit-input[type="color"] {
+    width: 4rem;
+    height:2rem;
+    appearance: none;
+    cursor:pointer;
+    border: 1px solid #d1d5db;
+    border-radius: .375rem;
+    margin-bottom: .5rem;
+    padding: .25rem;
+  }
+
+  .formkit-input[type="range"] {
+    width: 100%;
+    height: 0.5rem;
+    appearance: none;
+    cursor:pointer;
+    border: 1px solid #d1d5db;
+    border-radius: 9999px;
+    padding: 0rem;
+    background-color: #e5e7eb;
+  }
+
+  .formkit-outer[data-type="file"] .formkit-inner {
+    border:none;
+  }
+
+  .formkit-input[type="file"] {
+    color: #4b5563;
+    font-size: 0.8rem;
+    line-height:1.0rem;
+    margin-bottom: 0.25rem;
+    color: #4b5563;
+  }
+
+  .formkit-input[type="file"]::file-selector-button {
+    color: #4b5563;
+    font-size: 0.8rem;
+    line-height:1.0rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 9999px;
+    background-color: #3b82f6;
+    color: white;
+  }  
+
+  .formkit-input[type="file"]::file-selector-button:hover {
+    background-color: #2563eb;
+  }
+
+  .formkit-no-files {
+    display:block;
+    color: #1f2937;
+    font-size: .8rem;
+    line-height: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  a.formkit-remove-files {
+    margin-left: auto;
+    color: #22c55e;
+    font-size: .8rem;
+    line-height: 1rem;
+    float:right;
+  }
+
+  .formkit-input[type="date"], .formkit-input[type="datetime-local"], .formkit-input[type="email"], .formkit-input[type="month"], .formkit-input[type="search"], .formkit-input[type="time"], .formkit-input[type="url"], .formkit-input[type="week"] {
+    width: 100%;
+    height:2.5rem;
+    padding: 0 .75rem 0 .75rem;
+    border: 1px solid #333;
+    border-radius:10px;
+    font-size: 1rem;
+    line-height:1.5rem;
+    color: #374151;
+  }
+
+  .formkit-input[type="date"]::placeholder, .formkit-input[type="datetime-local"]::placeholder, .formkit-input[type="email"]::placeholder, .formkit-input[type="month"]::placeholder, .formkit-input[type="search"]::placeholder, .formkit-input[type="time"]::placeholder, .formkit-input[type="url"]::placeholder, .formkit-input[type="week"]::placeholder {
+    color: #9ca3af;
+  }
+
+  select.formkit-input {
+    width: 100%;
+    height:2.5rem;
+    padding: 0 .75rem 0 .75rem;
+    border: 1px solid #333;
+    border-radius:10px;
+    font-size: 1rem;
+    line-height:1.5rem;
+    background-color: white;
+    color: #374151;
+  }
+
+  select.formkit-input::placeholder {
+    color: #9ca3af;
+  }  
+
+  .formkit-input[type="number"] {
+    width: 100%;
+    height:2.5rem;
+    padding: 0 .75rem 0 .75rem;
+    border: none;
+    font-size: 1rem;
+    line-height:1.5rem;
+    color: #374151;
+  }
+
+  .formkit-input[type="number"]::placeholder {
+    color: #9ca3af;
+  }  
+
+  .formkit-input[type="password"] {
+    width: 100%;
+    height:2.5rem;
+    padding: 0 .75rem 0 .75rem;
+    border: 1px solid #333;
+    border-radius:10px;
+    font-size: 1rem;
+    line-height:1.5rem;
+    color: #374151;
+  }
+
+  .formkit-input[type="password"]::placeholder {
+    color: #9ca3af;
+  }
+
+  fieldset.formkit-fieldset {
+/*    max-width: 28rem;*/
+    border: 1px solid #9ca3af;
+    border-radius: .75rem;
+    padding: 0 .5rem .25rem .5rem;
+  }
+
+  legend.formkit-legend {
+    font-weight:bold;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .formkit-input[type="radio"], .formkit-input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0 .75rem 0 .75rem;
+    border: 1px solid #6b7280;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .formkit-input[type="radio"]:checked, .formkit-input[type="checkbox"]:checked { 
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #3b82f6;
+  }
+
+  .formkit-input[type="radio"]:focus, .formkit-input[type="checkbox"]:focus { 
+    /*box-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);*/
+    border: 1px solid #000;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition-duration: 200ms;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+  }
+
+  button.formkit-input[type="button"] {
+    padding: 0.75rem 1.25rem;
+    border:none;
+    border-radius: .25rem;
+    font-size:1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: white;
+    background-color: #3b82f6;
+  }
+
+  button.formkit-input[type="button"]:hover {
+    background-color: #1d4ed8;
+  }  
+
+  button.formkit-input[type="submit"] {
+    padding: 0.75rem 1.25rem;
+    border:none;
+    border-radius: .25rem;
+    font-size:1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: white;
+    background-color: #ea580c;
+  }
+
+  button.formkit-input[type="submit"]:hover {
+    background-color: #92400e;
+  }
+
+  .formkit-input[type="tel"] {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    border:none;
+    font-size:1rem;
+    line-height: 1.5rem;
+    color: #374151;
+  }
+
+  .formkit-input[type="tel"]::placeholder {
+    color: #9ca3af;
+  }
+
+  textarea.formkit-input {
+    width: 100%;
+    height: 8rem;
+    padding: 0 0.75rem;
+    border:none;
+    font-size:1rem;
+    line-height: 1.5rem;
+    color: #374151;
+  }
+
+  textarea.formkit-input::focus {  
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+
+  textarea.formkit-input::placeholder {
+    color: #9ca3af;
+  }  
+
+  .formkit-help {
+    font-size: 0.75rem;
+    line-height:1rem;
+    color: #6b7280;
+  }
+
+  .formkit-messages {
+    list-style: none;
+    padding: 0px;
+    margin-top:0.25rem;
+    margin-bottom: 0px;
+  }
+
+  .formkit-message {
+    color: #ef4444;
+    margin-bottom: 0.25rem;
+    font-size: .75rem;
+    line-height:1rem;
+  }
+

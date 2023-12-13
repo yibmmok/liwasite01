@@ -1,0 +1,20 @@
+[
+	{"label":"", "value":""},
+	{"label":"Fab", "value":"A.cusNM"},
+	{"label":"所屬公司", "value":"A.fabs"},
+	{"label":"部門", "value":"A.depts"},
+	{"label":"是否已開發票", "value":"A.isReceipt"},
+	{"label":"付款狀況", "value":"A.isPaid"},
+	{"label":"使用者", "value":"A.keyContact"},
+	{"label":"發票號碼", "value":"A.receiptNo"},
+	{"label":"未稅金額", "value":"A.b4taxAmt"},
+	{"label":"含稅金額", "value":"A.ataxAmt"},
+	{"label":"PR,PO", "value":"A.PO"},
+	{"label":"PO Item", "value":"A.POItem"},
+	{"label":"PO日期", "value":"A.PODate"},
+	{"label":"報價單號", "value":"A.qtNo"},
+	{"label":"發票月", "value":"A.issueMonth"},
+	{"label":"付款月", "value":"A.paidMonth"},
+	{"label":"wafer", "value":"A.wafers"},
+	{"label":"備註", "value":"A.memo"}
+]
